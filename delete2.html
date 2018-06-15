@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>임시</title>
+        
+        <!--폰트<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
+        <style>
+            .demo {
+              max-width: 960px;
+              margin: 0 auto;
+              margin-bottom: 100px;
+            }
+
+            .demo > div {
+              float: left;
+              margin: 20px;
+            }
+            .demo p{
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            
+            </style>
+        <script>
+ //퍼센테이지
+            $(document).ready(function(){
+                $('.demo-1').percentcircle();
+
+                $('.demo-2').percentcircle({
+                animate : true,
+                diameter : 100,
+                guage: 3,
+                coverBg: '#fff',
+                bgColor: '#efefef',
+                fillColor: '#E95546',
+                percentSize: '15px',
+                percentWeight: 'normal'
+                });
+
+                $('.demo-3').percentcircle({
+                animate : true,
+                diameter : 100,
+                guage: 3,
+                coverBg: '#fff',
+                bgColor: '#efefef',
+                fillColor: '#DA4453',
+                percentSize: '18px',
+                percentWeight: 'normal'
+                });
+                $('.demo-4').percentcircle({
+                animate : true,
+                diameter : 100,
+                guage: 3,
+                coverBg: '#fff',
+                bgColor: '#efefef',
+                fillColor: '#46CFB0',
+                percentSize: '18px',
+                percentWeight: 'normal'
+                });		
+                $('.demo-5').percentcircle({
+                animate : true,
+                diameter : 100,
+                guage: 3,
+                coverBg: '#fff',
+                bgColor: '#efefef',
+                fillColor: '#8BC163',
+                percentSize: '18px',
+                percentWeight: '20px'
+                });	
+                $('.demo-6').percentcircle({
+                animate : true,
+                diameter : 100,
+                guage: 10,
+                coverBg: '#fff',
+                bgColor: '#efefef',
+                fillColor: '#D870A9',
+                percentSize: '18px',
+                percentWeight: 'normal'
+                });		
+
+            })
+        </script>
+    </head>
+    <body>
+    <div class="demo cf">
+        <div class="demo-1" data-percent="65"><p>PHOTOSHOP</p></div>
+        <div class="demo-2" data-percent="55"><p>ILLUSTRATOR</p></div>
+        <div class="demo-3" data-percent="85"><p>HTML5</p></div>
+        <div class="demo-4" data-percent="75"><p>CSS3</p></div>
+        <div class="demo-5" data-percent="65"><p>JAVASCRIPT</p></div>
+        <div class="demo-6" data-percent="65"><p>JQUERY</p></div>
+    </div>
+    </body>
+</html>
