@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+    <title>samsung mobile</title>
+    <style>
+       body,h1,h2,h3,p{margin: 0;}
+        ul{
+        padding: 0; /*가장자리 여백 없애기*/
+        margin: 0; /*가장자리 여백 없애기*/
+        list-style: none; /*왼쪽에 검은 점 없애기*/
+        }
+        a{
+        text-decoration: none; /*밑줄 없애기*/ 
+        color: black; /*글자 검은색*/
+        }
+        .cf:after{
+        content: ""; /*없는 존재를 만들어줌*/
+        display: block; /*유령을 사람으로 만들어줌*/
+        clear: both; /*float left속성 해제*/
+        }
+        #wrap{
+        width: 100%;
+        }
+        
+        /*---------------------------------------------------------------------------헤더------------------------------------------------------------------------*/
+        #header .headertop{
+            background: url(images/common/bg_top.gif); /*배경 파란색으로 채우기*/
+            height: 40px; /*gnb뺀 헤더 높이. 하필 40인 이유는 background로 들어간 이미지 크기에서 높이가 40px이기 때문*/
+            position: relative; /*panel의 부모*/
+        }
+        #header .headertop h1{
+            background:url(images/main/logo.gif)no-repeat; /*헤더 좌측 상단 삼성 로고*/
+            text-indent: -9999px; /*삼성 로고 텍스트 날리기*/
+            width: 150px; /*로고가 들어갈 너비 정해주기*/
+            height: 100%; /*headertop(부모)높이에 꽉 차게 높이 정해주기 즉 40px*/
+            background-size: 100%; /*정해준 width, height값에 맞춰서 꽉 차게 끼워넣기(width값 기준)*/
+            background-position: 0 center; /*좌우로는 0만큼 이동하고 상하로는 headertop의 정중앙으로 이동*/
+            margin-left: 10px; /*왼쪽에서 10px띄워주기*/
+        }
+        #header .headertop h1 a{}
+        #header .headertop .panel{
+            width:25px; /*네모 너비.왜 25????????*/
+            height: 40px; /*네모 높이.*/
+            padding: 0 10px; /*???????????*/
+            position: absolute; /*3줄 공중에 띄우기*/
+            top: 0; /*가장자리에 딱 붙이기*/
+            right: 0; /*가장자리에 딱 붙이기*/
+            text-indent: -9999px; /*메뉴 아이콘 텍스트 날리기*/
+            background: #10509d; /*3줄 배경으로 들어갈 네모 색깔*/
+        }
+        #header .headertop .panel a{
+            display: block; /*인라인 요소인 a태그를 block요소로 만들어서 부모인 panel 기준으로 좌우로 꽉차게 영역을 잡아줌*/
+            position: absolute;  /*???????????*/
+            top: 50%; /*???????????*/
+            margin-top: -8px; /*???????????*/
+
+        }
+        .panel a:before, .panel a:after{ /*왜 span이 아니라 a에 before와 after를 주나요? 이해 안 됨*/
+            content: ""; /*없는 유령 생성*/
+            display: block; /*유령을 인간으로 진화*/
+            width: 25px; /*span과 같은 너비*/
+            height: 2px; /*span과 같은 높이*/
+            background: #fff; /*span과 같은 색깔*/
+            margin:0 auto; /*panel(부모) 안에서 가로로 중앙정렬*/
+        }
+        #header .headertop .panel a span{
+            display: block; /*span은 인라인요소이므로 블록요소로 바꿔줘야 줄이 바뀌면서 3줄의 라인이 보임. 안그러면 일자로 붙어서 길다란 1개의 라인으로 보임*/
+            width: 25px; /*줄 너비*/
+            height: 2px; /*줄 높이*/
+            background: #fff; /*줄 색깔*/
+            margin: 5px auto; /*아래위로 5px여백->예쁜 3줄 완성, panel(부모) 안에서 가로로 중앙정렬*/
+        }
+        
+        #header .gnb{}
+        #header .gnb li{
+            width: 20%; /*너비 5등분 하기*/
+            float: left; /*블록요소를 옆으로 나란히 붙여주기. float left를 줬을 때는 그 부모(gnb)의 class에 cf부여(clear both)*/
+            font-size: 12px; /*메뉴 글자 크기*/
+            letter-spacing: -1px; /*글자 자간 줄이기*/
+            text-align: center; /*li를 기준으로 글자 가로로 가운데 정렬*/
+            height: 29px; /*li높이. 배경으로 준 이미지 높이값이 29px*/
+            line-height: 29px; /*글자 높이와 li높이를 같게 맞춰줘서 li를 기준으로 글자를 세로로 가운데 정렬*/
+            border-left: 1px solid #666; /*왼쪽에 밝은 회색선*/
+            border-right: 1px solid #333; /*오른쪽에 어두운 회색선*/
+            box-sizing: border-box; /*border로 넣어준 선을 li로 정해준 상자 안에서 다 해결해라. 그 밖으로 튀어나가지 마라*/
+            background:url(images/common/bg_gnb.gif); /*배경 회색으로 채우기*/
+        }
+        #header .gnb li:first-child{
+            border-left: 0; /*맨 왼쪽 li의 왼쪽 회색선 제거*/
+        }
+        #header .gnb li:last-child{
+            border-right: 0; /*맨 오른쪽 li의 오른쪽 회색선 제거*/
+        }
+        #header .gnb li a{
+            color: #fff; /*메뉴 글자 색깔*/
+            display: block; /*li값만큼 a영역 잡아주기*/
+        }
+        /*---------------------------------------------------------------------------컨테이너------------------------------------------------------------------------*/
+        #container{}
+        /*---------------------------------------mainslider---------------------------------------*/
+        .mainslider{
+            position: relative; /*leftBtn, rightBtn 부모*/
+        }
+        .mainslider img{
+            width: 100%; /*가로너비가 어찌되든 간에 무조건 가로에 100% 채워지게 너비 조절*/
+            display: block; /*img태그는 인라인 요소. 그래서 공백까지 잡아먹음. 깔끔하게 이미지만큼 잡히게 하기 위해 display block??????????????*/ 
+        }
+        .mainslider .leftBtn{
+            position: absolute; /*공중에 띄우기*/
+            left: 10px; /*왼쪽에서 10px 띄우기*/
+            bottom: 10px; /*밑에서 10px 띄우기*/
+            font-size: 0; /*leftBtn a:display inline-block*/
+        }
+        .mainslider .leftBtn a{
+            background: url(images/main/blet_visual.png) no-repeat; /*테두리동그라미 4개*/
+            text-indent: -9999px; /*동그라미 텍스트 날리기*/
+            width: 16px; /*동그라미가 들어갈 상자 크기=동그라미 크기*/
+            height: 16px; /*동그라미가 들어갈 상자 크기=동그라미 크기*/
+            display: inline-block; /*영역 잡히게 하되 옆으로 붙이기*/
+            margin-right: 5px; /*오른쪽 여백 5px*/
+        }
+        .mainslider .leftBtn a.on{
+            background-position: 0 -16px; /*좌우로 0, 위로 16만큼 background의 위치를 상자 안에서 옮겨줘서 흰 동그라미가 나오게 함*/
+        }
+        .mainslider .rightBtn{
+            position: absolute; /*공중에 띄우기*/
+            right: 0; /*오른쪽에 딱 붙이기*/
+            bottom: 0; /*밑에 딱 붙이기*/
+            font-size: 0; /*rightBtn a:display inline-block*/
+        }
+        .mainslider .rightBtn a{
+            width: 45px; /*박스 1개 크기*/
+            height: 45px; /*박스 1개 크기*/
+            display: inline-block; /*영역 잡히는 동시에 옆에 따닥따닥 붙여주기*/
+            background: url(images/main/btn_visual_cnt.png) no-repeat; /*재생, 일시정지, 빨리감기 이미지*/
+            text-indent: -9999px; /*텍스트 날리기*/
+            margin-left: 1px; /*왼쪽 여백 1px만 줘서 3개의 박스를 아주 약간만 떨어트려 주기*/
+        }
+        .rightBtn a:nth-child(2){
+            background-position: -46px 0; /*박스 안에서 왼쪽으로 45px이동*/
+        }
+        .rightBtn a:last-child{
+            background-position: -92px 0; /*박스 안에서 왼쪽으로 92px이동*/
+        }
+        /*---------------------------------------mainrow1---------------------------------------*/
+        .mainRow1{}
+        .mainRow1 h2{
+            width: 35%;
+            margin: 20px auto;
+        }
+        .mainRow1 h2 img{
+            width: 100%;
+        }
+        .mainRow1 div{
+            width: 100%;
+            height: 200px;
+            background: url(images/main/brandSite_img01.jpg) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-bottom:2px solid #fff;
+        }
+        .mainRow1 .list02{
+            background: url(images/main/brandSite_img02.jpg) no-repeat;
+            background-size: cover;/*background-size와 background-position은 상속이 안되는 속성이므로 똑같이 복사붙여넣기 해줘야함*/
+            background-position: center center;
+        }
+        .mainRow1 .list03{
+            background: url(images/main/brandSite_img03.jpg) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .mainRow1 div a{
+            color: #fff;
+            display: block;
+            height: 100%;/*클릭돼야할 범위보다 a 세로값 범위가 작게 나올때. a부모와 a의 height값을 같게 해줌*/
+        }
+        .mainRow1 div a span{
+            padding-left: 25px;
+        }
+        .mainRow1 div a span.title{
+            display: block;
+            font-size: 25px;
+            padding-top: 130px;
+        }
+        /*---------------------------------------mainrow2--------------------------------------*/
+        .mainRow2{}
+        .mainRow2 div{}
+        .mainRow2 div a{
+            width: calc(50% - 1px);
+            float: left;
+            margin-bottom: 2px;
+            /*
+            height: 250px;
+            display: block;*/
+            /**/
+            }
+        .mainRow2 div a:nth-child(odd){/*odd는 홀수*/
+            margin-right: 1px;
+        }
+        .mainRow2 div a:nth-child(even){/*even은 짝수*/
+            *margin-left: 1px;
+        }
+        .mainRow2 div a:nth-child(n+3) ul{
+            height: 100px;
+        }
+        .mainRow2 div a img{
+            width: 100%;
+            display: block;
+        }
+        .mainRow2 div a ul{
+            background: #1c97fe;
+            color: #fff;
+            padding: 15px;
+            height: 110px;
+            /**/
+        }
+        .mainRow2 div a ul li{
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .mainRow2 div a ul li.last{
+            font-weight: normal;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        /*---------------------------------------mainrow3---------------------------------------*/
+        .mainrow3{}
+        .mainrow3 h2{
+            width: 40%;
+            margin: 20px auto;
+        }
+        .mainrow3 h2 img{
+            width: 100%;
+        }
+        .mainrow3 ul{}
+        .mainrow3 ul li{
+            width: 50%;
+            height: 135px;
+            float: left;
+            font-size: 12px;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+        .grayBg{
+            background: #f1f1f1;
+        }/*
+        .mainrow3 ul li.h200{
+            height: 200px;
+        }*/
+        .mainrow3 ul li img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        .mainrow3 ul li a{}
+        .mainrow3 ul li a h3{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .mainrow3 ul li a p{}
+        /*---------------------------------------------------------------------------푸터------------------------------------------------------------------------*/
+        #footer{
+            background: url(images/common/bg_footer_new.gif);
+            font-size: 11px;
+            color: #fff;
+            letter-spacing: -1px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        #footer span{
+            border: 1px solid #fff;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 0 3px;
+            margin-top: 10px;
+        }
+        #footer span a{
+            color: #fff;
+            display: block;
+            padding: 5px 10px;
+        }
+        </style>
+</head>
+    <!-----------------------------------------------------------------------------body 시작----------------------------------------------------------------------->
+<body>
+    <div id="wrap">
+    <!------------------------------------------------헤더------------------------------------------------------->
+        <header id="header">
+            <div class="headertop">
+                <h1><a href="#">삼성로고</a></h1>
+                <div class="panel">
+                    <a href="#"><span>메뉴아이콘</span></a>
+                </div>
+            </div> <!--headertop끝-->
+            <ul class="gnb cf">
+                <li><a href="#">기업정보</a></li>
+                <li><a href="#">제품</a></li>
+                <li><a href="#">미디어센터</a></li>
+                <li><a href="#">인재/채용</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul> <!--gnb끝-->
+        </header> 
+    <!-----------------------------------------------컨테이너---------------------------------------------------->
+        <div id="container">
+            <div class="mainslider">
+                <img src="images/main/visual01.jpg" alt="메인이미지">
+                <div class="leftBtn">
+                    <a href="#" class="on">동그라미1</a>
+                    <a href="#">동그라미2</a>
+                    <a href="#">동그라미3</a>
+                    <a href="#">동그라미4</a>
+                </div> <!--leftBtn끝-->
+                <div class="rightBtn">
+                    <a href="#">버튼1</a>
+                    <a href="#">버튼2</a>
+                    <a href="#">버튼3</a>
+                </div> <!--rightBtn끝-->
+            </div>
+            <!-----------------------------------------------mainrow1---------------------------------------------------->
+            <div class="mainRow1">
+                <h2>
+                    <img src="images/main/brandSite_title01.png" alt="브랜드타이틀"/>
+                </h2>
+                <div class="list01">
+                    <a href="#">
+                        <span class="title">삼성 OLED 디스플레이</span>
+                        <span>amoledworld.com</span>
+                    </a>
+                </div>
+                <div class="list02">
+                    <a href="#">
+                        <span class="title">삼성 커브드 디스플레이</span>
+                        <span>curved4life.com</span>
+                    </a>
+                </div>
+                <div class="list03">
+                    <a href="#">
+                        <span class="title">삼성 디스플레이 PID</span>
+                        <span>pid.samsungdisplay.com</span>
+                    </a>
+                </div>
+            </div>
+            <!-----------------------------------------------mainrow2---------------------------------------------------->
+            <div class="mainRow2">
+                <div class="cf">
+                    <a href="#">
+                        <img src="images/main/center_img01.jpg" alt="링크이미지1"/>
+                        <ul>
+                            <li>News</li>
+                            <li class="last">갤럭시s9, '액설런트 a+' 최고 화질 평가<br>(미 디스플레이메이트 화질평가서 최고 등급 획득)</li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <img src="images/main/center_img02.jpg" alt="링크이미지2"/>
+                        <ul>
+                            <li>Site</li>
+                            <li class="last">삼성디스플레이의 사업장,<br>글로벌 네트워크,</li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <img src="images/main/center_img03.jpg" alt="링크이미지3"/>
+                        <ul>
+                            <li>봄 꽃처럼 화사한 사우들이 모였다!</li>
+                            <li class="last">삼성디스플레이 꽃꽂이<br/>동호회 '플라워레슨'</li>
+                        </ul>
+                    </a>
+                    <a href="#">
+                        <img src="images/main/center_img04.jpg" alt="링크이미지4"/>
+                        <ul>
+                            <li>중국 스마트폰 시장, OLED 전성시대</li>
+                            <li class="last">뛰어난 화질의 OLED<br>디스플레이를 더하다!</li>
+                        </ul>
+                    </a>
+                </div> <!--cf끝-->
+            </div> <!--mainrow2끝-->
+            <!-----------------------------------------------mainrow3---------------------------------------------------->
+            <div class="mainrow3">
+                <h2>
+                    <img src="images/main/brandSite_title02.png" alt="상품뷰타이틀">
+                </h2>
+                <ul class="cf">
+                   <li><!------------------------1----------------------------->
+                        <img src="images/main/proView_img01.jpg" alt="상품1">
+                   </li>
+                   <li class="grayBg"><!------------------------2----------------------------->
+                        <a href="#">
+                            <h3>Mobile Display</h3>
+                            <p>삼성의 앞선 플렉서블 기술로 첨단 디자인과 최고의 화질 특성을 갖춘 모바일 제품을 체험하실 수 있습니다.</p>
+                        </a>
+                   </li>
+                   <li  class="grayBg"><!------------------------3----------------------------->
+                      <a href="">
+                          <h3>TV Display</h3>
+                          <p>삼성 차세대 QD 기술이 적용된 최고 화질과 초대형 TV제품으로 자연을 그대로 감상할 수 있습니다.</p>
+                      </a>
+                  </li>
+                  <li><!------------------------4----------------------------->
+                      <img src="images/main/proView_img02.jpg" alt="상품2"/>
+                  </li>
+                  <li class="imgMT"><!------------------------5----------------------------->
+                      <img src="images/main/proView_img03.jpg" alt="상품3"/>
+                  </li>
+                  <li class="grayBg h200"><!------------------------6----------------------------->
+                      <a href="#">
+                            <h3>PID(Publick Information Display)</h3>
+                            <p>삼성의 차별화된 PID 전용패널의 설치용이성, 내구성, 고품질을 통해 최고의 가치를 실현.</p>
+                      </a>
+                  </li>
+                  <li class="grayBg"><!------------------------7---------------------------->
+                      <a href="">
+                          <h3>IT Display</h3>
+                          <p>삼성 커브드 모니터로 작업 효율과 눈의 피로를 없애고 선명한 화질과 최고의 명암비의 Tablet 제품을 체험.</p>
+                      </a>
+                  </li>
+                  <li><!------------------------8---------------------------->
+                      <img src="images/main/proView_img04.jpg" alt="상품4">
+                  </li>
+
+                    </ul>
+            </div><!--mainrow3끝-->
+            </div> <!--container끝-->
+        <!------------------------------------------------푸터------------------------------------------------------->
+            <footer id="footer">
+                <p>COPYRIGHT &copy; 2018 SAMSUNG DISPLAY.CO.LTD.ALL RIGHTS RESERVED.</p>
+                <p>본사｜17113 경기도 용인시 기흥구 삼성로1 대표번호｜031-209-8114</p>
+                <span><a href="">language</a></span>
+                <span><a href="">PC version</a></span>
+            </footer>
+        </div> <!--wrap끝-->
+    </body>
+</html>
