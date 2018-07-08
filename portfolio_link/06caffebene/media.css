@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+@media screen and (max-width:768px){
+
+    body{
+
+        min-width:auto;
+
+    }
+
+    .inner{
+
+        width:auto;
+
+    }
+
+    .gnb,.headerTop{
+
+        display:none;
+
+    }
+
+    .headerIn{
+
+        padding:10px;
+
+    }
+
+    .mTopIcon{
+
+        width:70%;
+
+        display:block;
+
+        float:left;
+
+        text-align:right;
+
+        margin-top:10px;
+
+    }
+
+    .mTopIcon li{
+
+        width:25px;
+
+        padding-left:15px;
+
+        display:inline-block;
+
+        vertical-align:middle;
+
+        text-align:center;
+
+    }
+
+    .mTopIcon li img{
+
+        width:100%;
+
+    }
+
+    .mTopIcon li:first-child img{
+
+        width:100%;
+
+    }
+
+    .mTopIcon li:nth-child(2) img{}
+
+    .mTopIcon li:nth-child(3) img{}
+
+    .mTopIcon li:nth-child(4) img{
+
+        width:18px;
+
+    }
+
+    .mTopIcon li:last-child img{
+
+        width:22px;
+
+    }
+
+    .headerIn h1{
+
+        width:30%;
+
+        float:left;
+
+    }
+
+    
+
+    /*컨테이너*/
+
+    .mainSlider{
+
+        height:270px;
+
+    }
+
+    .mainSlider img{
+
+        width:800px;
+
+        margin-left:-400px;
+
+    }
+
+    
+
+    /*mainrow1*/
+
+    .mainRow1{
+
+        padding:20px;
+
+    }
+
+    .leftBox, .rightBox{
+
+        width:100%;
+
+        padding-left:0;
+
+        text-align:center;
+
+    }
+
+    .leftBox{
+
+        border-right:0;
+
+    }
+
+    .leftBox h2,.leftBox p{
+
+        width:100%;
+
+    }
+
+    .leftBox h2:after{
+
+        content:"";
+
+        display:block;
+
+        width:150px;
+
+        height:1px;
+
+        margin:10px auto;
+
+        background:#999;
+
+    }
+
+    .leftBox p{
+
+        font-size:15px;
+
+        font-weight:800;
+
+        margin-bottom:15px;
+
+        margin-top:0;
+
+    }
+
+    .rightBox{
+
+        font-size:12px;
+
+        line-height:18px;
+
+    }
+
+    .rightBox a{
+
+        margin:0 auto;
+
+        margin-top:30px;
+
+    }
+
+    /*mainRow2*/
+
+    .mainRow2{
+
+        padding:100px 20px 50px 20px;
+
+    }
+
+    /*mainRow3*/
+
+    .mainRow3{
+
+        padding:70px 20px;
+
+    }
+
+    .mainRow3 h2{
+
+        width:250px;
+
+        margin:0 auto;
+
+    }
+
+    .mainRow3 p{
+
+        font-size:13px;
+
+    }
+
+    .row3box.lBox{
+
+        width:100%;
+
+        height:200px;
+
+    }
+
+    .row3box a img{
+
+        width:150px;
+
+        margin-left:-75px;
+
+    }
+
+    .row3box.mBox,.row3box.sBox{
+
+        width:calc(50% - 1px);
+
+        height:200px;
+
+    }
+
+    .mainRow3 .inner div:nth-child(2n){
+
+        margin-left:0;
+
+    }
+
+    .row3box.sBox img{
+
+        margin-left:-75px;
+
+    }
+
+    .row3box.mBox img{
+
+        width:200px;
+
+        margin-left:-100px;
+
+        top:20px;
+
+    }
+
+    .menuInfo{
+
+        padding:0 20px;
+
+        box-sizing:border-box;
+
+    }
+
+    
+
+    /*mainRow4*/
+
+    .mainRow4{
+
+        background-size:cover;
+
+        background-position:center center;
+
+        padding:80px 20px;
+
+    }
+
+    /*mainRow5*/
+
+    .mainRow5{
+
+        padding:20px 0;
+
+    }
+
+    .mainRow5 span{
+
+        width:100%;
+
+    }
+
+    .mainRow5 span.stitle{
+
+        padding:0 15px;
+
+        box-sizing:border-box;
+
+    }
+
+    .mainRow5 span a{
+
+        margin-top:15px;
+
+    }
+
+    
+
+    /*mainRow6*/
+
+    .mainRow6{
+
+        background-size:cover;
+
+        background-position:center center;
+
+    }
+
+    .row6Box{
+
+        width:60%;
+
+        margin:0 auto;
+
+        float:none;
+
+    }
+
+    
+
+    /*푸터시작*/
+
+    .footerTop{
+
+        padding:0;
+
+    }
+
+    .fMenu{
+
+        width:100%;
+
+        float:none;
+
+    }
+
+    .fMenu div,.fMenu h3:after{
+
+        display:none;
+
+    }
+
+    .fMenu h3{
+
+        padding:0 15px;
+
+        line-height:50px;
+
+        border-top:1px solid #000;
+
+    }
+
+    .topBtn{
+
+        width:80px;
+
+        height:30px;
+
+        background-size:100%;
+
+        top:-30px;
+
+        line-height:35px;
+
+    }
+
+    .topBtn a{
+
+        padding-top:0;
+
+        margin-left:-8px;
+
+    }
+
+    .footerBottom{
+
+        padding:20px 0;
+
+    }
+
+    .footerBottom h1{
+
+        width:130px;
+
+        margin:0 auto;
+
+    }
+
+    .footerInfo{
+
+        text-align:center;
+
+    }
+
+    .footerInfo li{
+
+        width:100%;
+
+        float:none;
+
+        display:inline-block;
+
+    }
+
+    .footerInfo li:after{
+
+        display:none;
+
+    }
+
+    .footerInfo li:nth-child(-n+5):after{
+
+        display:inline-block;
+
+    }
+
+    .footerInfo li:nth-child(4):after{
+
+        display:none;
+
+    }
+
+    .footerInfo li:nth-child(-n+5){
+
+        width:auto;
+
+        margin:10px 0;
+
+    }
+
+    .footerBottom p{
+
+        text-align:center;
+
+    }
+
+    .fSns{
+
+        width:105px;
+
+        margin:0 auto;
+
+        position:static;
+
+        margin-top:15px;
+
+    }
+
+}

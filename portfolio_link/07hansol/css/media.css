@@ -1,0 +1,272 @@
+/*768px*/
+
+@media screen and (max-width:768px){
+    body{
+        min-width:auto;
+    }
+    .w1000{
+        width:auto;
+    }
+    #mainSlider{
+        width:100%;
+        height:370px;
+        overflow:hidden;
+        position:relative;
+    }
+    #mainSlider img{
+        width:1000px;
+        position:absolute;
+        left:50%;
+        margin-left:-500px;
+    }
+    .sliderBtn div.prevBtn{
+        background-position:-64px -30px;
+    }
+    .sliderBtn div.nextBtn{
+       background-position:-79px -30px; 
+    }
+    .sliderBtn div{
+        width:13px;
+        height:23px;
+        background-size:400px 400px;        
+    }
+    #header{
+        padding:15px;
+        box-sizing:border-box;
+    }
+    #header h1{
+        width:70px;
+        height:30px;
+        position:static;
+        background-size:400px 400px;
+        background-position:0 0;
+    }
+    
+    .gnb,.utill{
+        display:none;
+    }
+    .panel{
+        display:block;
+        position:absolute;
+        top:50%;
+        margin-top:-8px;
+        right:15px;
+    }
+    .panel a{}
+    .panel a:before,.panel a:after{
+        content:"";
+        display:block;
+        width:30px;
+        height:2px;
+        background:#000;        
+    }
+    .panel a span{
+        width:30px;
+        height:2px;
+        display:block;
+        background:#000;
+        margin:5px 0;
+        text-indent:-9999px;
+    }
+    
+    /*mainrow1*/
+    .mainRow1{
+        padding-bottom:0;
+    }
+    .mainRow1 ul li{
+        width:33.33%;
+        margin-bottom:30px;
+    }
+    .mainRow1 ul li:hover .icon1{
+        background-position: -1px -92px;
+    }
+    .mainRow1 ul li:hover .icon2{
+        background-position: -35px -92px;
+    }
+    .mainRow1 ul li:hover .icon3{
+        background-position: -75px -92px;
+    }
+    .mainRow1 ul li:hover .icon4{
+        background-position: -108px -92px;
+    }
+    .mainRow1 ul li:hover .icon5{
+        background-position: -145px -92px;
+    }
+    .mainRow1 ul li:hover .icon6{
+        background-position: -181px -92px;
+    }
+    .mainRow1 ul li a span{
+        width:33px;
+        height:26px;
+        background-size:400px 400px; 
+    }
+    .mainRow1 .icon1{
+        background-position:-1px -59px;
+    }
+    .mainRow1 .icon2{
+        background-position:-35px -59px;
+    }
+    .mainRow1 .icon3{
+        background-position:-75px -59px;
+    }
+    .mainRow1 .icon4{
+        background-position:-108px -59px;
+    }
+    .mainRow1 .icon5{
+        background-position:-145px -59px;
+    }
+    .mainRow1 .icon6{
+        background-position:-181px -59px;
+    }
+    /*mainrow2*/
+    .mainRow2{
+        display:none;
+    }
+    
+    /*mainrow3*/
+    .mainRow3{
+        width:calc(100% - 20px);
+    }
+    .mainRow3 div{
+        width:calc(50% - 5px);
+        height:auto;
+        margin-left:10px;
+        margin-bottom:10px;
+    }
+    .mainRow3 div a h5{
+        padding:43% 0;
+        font-size:14px;
+    }
+    .mainRow3 div.row3Box3{        
+        margin-left:0;
+    }
+    .mainRow3 div a:hover p{
+        display:none;
+    }
+    .mainRow3 div a:hover{
+        background:rgba(0,0,0,0);
+    }
+    .mainRow3 div a:hover h5{
+        color:#fff;
+    }
+    .mainRow3 div.row3Box2 a:hover h5{
+        color:#000;
+    }
+    .mainRow3 div.row3Box4{
+        padding:0;
+        background:url(../images/mainrow3_img1.jpg) no-repeat;
+        background-size:cover;
+    }
+    .row3Box4 h5{
+        padding:43% 0;
+        font-size:14px;
+        margin-bottom:0;
+        color:#fff;
+    }
+    .row3Box4 select,.row3Box4 input,.row3Box4 button{
+        display:none;
+    }
+    
+    /*mainRow4*/
+    .mainRow4{display:none;}
+    .mMainRow4{
+        display:block;
+        padding:0 10px;
+    }
+    .notice,.news{
+        background:#f2f0ed;   
+        padding:10px 0;
+        margin-bottom:10px;
+    }
+    .mMainRow4 .title{
+        width:20%;
+        color:#2d5b79;
+        font-weight:bold;
+        float:left;
+        text-align:center;
+    }
+    .mMainRow4 .con{
+        width:80%;
+        float:left;
+        padding-right:20px;
+        box-sizing:border-box;
+        overflow:hidden;
+        text-align:center;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    
+    /*mainRow5*/
+    .mainRow5{
+        background-size:cover;
+    }
+    .mainRow5 ul{
+        width:calc(100% - 20px);
+        margin:0 auto;
+    }
+    .mainRow5 ul li{
+        width:calc(50% - 5px);
+        height:auto;
+        margin-left:10px;
+        margin-bottom:10px;
+    }
+    .mainRow5 ul li:nth-child(3){
+        margin-left:0;
+    }
+    .mainRow5 ul li a{
+        font-size:0;
+    }
+    .mainRow5 ul li a span{
+        padding-top:80%;
+        padding-bottom:20%;
+        font-size:14px;
+    }
+    
+    /*footer*/
+    .footerTop ul{
+        float:none;
+        font-size:0;
+        text-align:center;
+        width:250px;
+        margin:0 auto;
+        margin-bottom:5px;
+    }
+    .footerTop ul li{
+        float:none;
+        display:inline-block;
+        font-size:13px;
+        line-height:30px;
+    }
+    .footerTop .topRight{
+        float:none;
+        text-align:center;
+        font-size:0;
+    }
+    .footerTop .topRight div span,.footerTop .topRight div span.number{
+        font-size:12px;
+    }
+    .footerTop .topRight div{
+        width:40%;
+        float:none;
+        display:inline-block;
+        vertical-align:top;
+    }
+    .footerTop .topRight div:first-child{
+        padding:0 10px;
+    }
+    .footerTop .topRight div span.number{
+        padding-left:10px;
+    }
+    .footerTop .topRight div select{
+        width:100%;
+    }
+    .footerBottom{
+        padding:20px 0;
+    }
+    .footerBottom p{
+        margin-top:0;
+    }
+    .footerBottom h1,.footerBottom address{
+        display:none;
+    }
+}
