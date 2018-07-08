@@ -1,0 +1,234 @@
+/*공통시작*/
+            body,p,h1,h4{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .cf:after{
+                content: ""; 
+                display: block; 
+                clear: both;
+            }
+            a{
+                text-decoration: none; 
+                color: black;
+            }
+            #wrap{
+                width: 100%;
+            }
+            /*공통끝*/
+            
+            /*헤더 시작*/
+            #header{
+                background: white;
+                position: fixed;
+                z-index: 200;
+                top: 0;
+                width: 100%;
+                border-bottom: 2px solid #285d80;
+            }
+            #header h1{
+                text-align: center;
+                font-size: 15px;
+                margin: 10px 0;
+            }
+            #header h1 a{
+                display: inline-block;
+                color: #285d80;
+            }
+            #header .search input{
+                width: 95%;
+                margin: 0 auto;
+                height: 33px;
+                border-radius: 17px;
+                border: 2px solid #285d80;
+                box-sizing: border-box;
+                background: #fff;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                display: block;
+            }
+            .search a{
+                display: block;
+            }
+            .search a img{
+                width: 19px;
+                position: absolute;
+                top: 57%;
+                right: 6%;
+            }
+            /*레프트버튼 시작*/
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1001;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+            .sidenav .gnb a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 15px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                width: 250px;
+            }
+
+            .sidenav .gnb a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav a.closebtn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 22px;
+                height: 21px;
+                padding: 0;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+            .closebtn img{
+                width: 22px;
+            }
+            .openBtn{
+                cursor: pointer;
+                position: fixed;
+                z-index: 1000;
+                color: #fff; 
+                top: 10px;
+                left: 10px;
+            }
+            .openBtn img{
+                width: 22px;
+            }
+            
+            .menuTop{
+                font-size: 0;
+                padding: 5px;
+            }
+            .menuTop .profileImage{
+                display: inline-block;
+                background: url(../images/common/profile_image.png) no-repeat;
+                background-size: 100%;
+                width: 30px;
+                height: 30px;
+                vertical-align: middle;
+            }
+            .menuTop a{
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+            .menuTop a.user{
+                font-size: 14px;
+                display: inline-block;
+            }
+            .menuTop a.logout{
+                width: 60px;
+                height: 20px;
+                border-radius: 5px;
+                background: #1e455f;
+                color: #fff;
+                font-size: 12px;
+                display: inline-block;
+                text-align: center;
+                line-height: 18px;
+            }
+            .condition{
+                padding: 20px 0;
+                background: #ebebeb;
+            }
+            .condition li{
+                float: left;
+                text-align: center;
+                width: 33.33%;
+                font-size: 14px;
+            }
+            .condition li a{
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                background: #285d80;
+                display: block;
+                color: #fff;
+                font-size: 25px;
+                margin: 0 auto;
+                line-height: 60px;
+                margin-bottom: 10px;
+            }
+            .condition li a.borrow{
+                background: #f58d39;
+            }
+            .barcode{
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 30px 0;
+            }
+            .barcode img{
+                width: 80%;
+            }
+            .gnb a{cursor:pointer; background: #ebebeb;}
+            .gnb .hide{display:none;}
+            /*레프트버튼 끝*/
+            /*헤더 끝*/
+/*푸터시작*/
+            .footerIn{
+                background: #313131;
+                margin-bottom: 35px;
+            }
+            .footerIn .footerBtn{
+                font-size: 0;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .footerIn .footerBtn a{
+                color: #fff;
+                display: inline-block;
+                width: 80px;
+                height: 35px;
+                line-height: 35px;
+                background: #505050;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+            .footerIn .footerBtn a.PC{
+                margin-left: 0;
+            }
+            .footerIn p{
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                padding: 15px 0;
+            }
+            .footerBottom{
+                z-index: 5000;
+                background: #313131;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            .footerBottom li{
+                width: 20%;
+                height: 35px;
+                float: left;
+                text-align: center;
+            }
+            .footerBottom li a{
+                display: block;
+            }
+            .footerBottom li a img{
+                width: 35px;
+                height: 35px;
+            }
+            /*푸터끝*/

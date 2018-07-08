@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+        <title>수영u-도서관</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/slick.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        //레프트메뉴
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        $(document).ready(function(){
+            //공통
+                $("#header").load("header.html")
+                $("#footer").load("footer.html")
+                
+            //도서관
+                $(".book_content").hide();
+                $(".book_content:first").show();
+
+                $("ul.age li").click(function () {
+                    $("ul.age li").removeClass("age_active").css("color", "#ccc");
+                    $(this).addClass("age_active").css("color", "#000");
+                    $(".book_content").hide()
+                    var activeTab2 = $(this).attr("rel");
+                    $("#" + activeTab2).fadeIn()
+                });
+        });
+            
+        </script>
+        <style>
+            /*메인슬라이더시작*/
+            #container{
+                margin-top: 83px;
+            }
+            /*메인로우3끝*/
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+            </div>
+            <div id="container">
+                <h4>신착자료안내</h4>
+                <div class=""></div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </body>
+</html>

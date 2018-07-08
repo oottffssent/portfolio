@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+        <title>수영u-도서관</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        //레프트메뉴
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        $(document).ready(function(){
+            //공통
+                $("#header").load("header.html")
+                $("#footer").load("footer.html")
+                
+            //슬릭
+              $('.lazy').slick({
+                  infinite: true,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots:true,
+                });
+            
+            //공지사항클릭이벤트
+            $(".tab_content").hide();
+            $(".tab_content:first").show();
+
+            $("ul.tabs li").click(function () {
+                $("ul.tabs li").removeClass("active").css("color", "#ccc");
+                $(this).addClass("active").css("color", "#f58d39");
+                $(".tab_content").hide()
+                var activeTab = $(this).attr("rel");
+                $("#" + activeTab).fadeIn()
+            }); 
+            
+            //도서관
+            $(".book_content").hide();
+            $(".book_content:first").show();
+
+            $("ul.age li").click(function () {
+                $("ul.age li").removeClass("age_active").css("color", "#ccc");
+                $(this).addClass("age_active").css("color", "#000");
+                $(".book_content").hide()
+                var activeTab2 = $(this).attr("rel");
+                $("#" + activeTab2).fadeIn()
+            });
+        });
+            
+        </script>
+        <style>
+            /*메인슬라이더시작*/
+            .mainslider{
+                position: relative;
+            }
+            .mainslider p{
+                position: absolute;
+                top: 50%;
+                margin-top: -22px;
+                z-index: 5;
+                color: #fff;
+                text-align: center;
+                font-size: 15px;
+            }
+            .mainslider p span{
+                font-size: 18px;
+                font-weight: 800;
+            }
+            /*슬릭시작*/
+            * {
+              box-sizing: border-box;
+            }
+
+            .slider {
+                margin-top: 83px;
+                position: relative;
+            }
+            
+            #container{
+                position: relative;
+            }
+            .slider:before{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 320px;
+                background: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .slick-slide{
+                width: 100%;
+                height: 320px;
+            }
+
+            .slick-slide img {
+              width: 100%;
+              min-height: 320px;
+            }
+            .slider p{
+            }
+            .slick-prev:before,
+            .slick-next:before {
+              color: black;
+            }
+            .slick-prev,.slick-next{
+                position: absolute;
+                width: 15px;
+                height: 32px;
+                text-indent: -9999px;
+                border: 0;
+                z-index: 5;
+            }
+            .slick-prev{
+                background: url(images/main/mainslider_prev.png) no-repeat;
+                background-size: 100%;
+                top: 50%;
+                margin-top: -16px;
+                left: 10px;
+                z-index: 100;
+            }
+            .slick-next{
+                background: url(images/main/mainslider_next.png) no-repeat;
+                background-size: 100%;
+                top: 50%;
+                margin-top: -16px;
+                right: 10px;
+                z-index: 100;
+            }
+            .slick-dots{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -84px;
+                font-size: 0;
+                z-index: 5;
+            }
+            .slick-dots li{
+                width: 40px;
+                height: 3px;
+                background: rgba(255,255,255,0.5);
+                display: inline-block;
+                text-indent: -9999px;
+                margin-left: 3px;
+            }
+            .slick-dots li:first-child{
+                margin-left: 0;
+            }
+            .slick-dots li.slick-active{
+                background: #fff;
+                opacity: 1;
+            }
+
+            .slick-active {
+              opacity: .5;
+            }
+
+            .slick-current {
+              opacity: 1;
+            }
+            /*슬릭끝*/
+            /*메인슬라이더끝*/
+            
+            /*메인로우1시작*/
+            .mainRow1{}
+            .mainRow1 .fastmenu{}
+            .mainRow1 .fastmenu li{
+                width: 33.33%;
+                float: left;
+                text-align: center;
+                font-size: 14px;
+            }
+            .fastmenu li a{
+                display: block;
+            }
+            .fastmenu li a span{
+                width: 80px;
+                height: 80px;
+                display: block;
+                margin: 0 auto;
+                text-indent: -9999px;
+            }
+            .fastmenu li a span.icon1{
+                background: url(images/main/row1_ico1.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            .fastmenu li a span.icon2{
+                background: url(images/main/row1_ico2.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            .fastmenu li a span.icon3{
+                background: url(images/main/row1_ico3.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            .fastmenu li a span.icon4{
+                background: url(images/main/row1_ico4.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            .fastmenu li a span.icon5{
+                background: url(images/main/row1_ico5.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            .fastmenu li a span.icon6{
+                background: url(images/main/row1_ico6.png) no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            /*메인로우1끝*/
+            
+            /*메인로우2시작*/
+            .mainRow2{
+                margin: 30px 0;
+            }
+            .tabs li{
+                float: left;
+                font-size: 14px;
+                color: #ccc;
+                width: 50%;
+                height: 35px;
+                line-height: 35px;
+                font-weight: 800;
+                text-align: center;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                cursor: pointer;
+            }
+            .tabs li.active{
+                color:#f58d39;
+                border-bottom:4px solid #f58d39;
+            }
+            .tab_content li{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                border-bottom: 1px solid #ccc;
+                font-size: 14px;
+            }
+            .tab_content li span{
+                font-weight: 800;
+                color: #285c81;
+                margin: 0 10px;
+            }
+            .tab_content li a{
+                display: inline-block;
+            }
+            .tab_content li.last{
+                text-align: center;
+            }
+            
+            .tab_content li.last a{
+                display: block;
+            }
+            /*메인로우2끝*/
+            
+            /*메인로우3시작*/
+            .mainRow3{
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .mainRow3 h4{
+                font-size: 15px;
+                font-weight: 800;
+                line-height: 30px;
+                margin-left: 5px;
+            }
+            .mainRow3 .age{
+                font-size: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .mainRow3 .age li.age_active{
+                font-weight: 800;
+                color: #000;
+            }
+            .mainRow3 .age li{
+                display: inline-block;
+                font-size: 13px;
+                width: 40px;
+                text-align: center;
+                line-height: 30px;
+                color: #ccc;
+            }
+            .mainRow3 .age li a{
+                color: #c8c8c8;
+            }
+            .mainRow3 .age li.on a{
+                font-weight: 800;
+                color: #000;
+            }
+            .mainRow3 .book{
+            }
+            .mainRow3 .book li{
+                width: 25%;
+                float: left;
+                text-align: center;
+            }
+            .mainRow3 .book li a{
+                display: block;
+            }
+            .mainRow3 .book li img{
+                width: 79px;
+            }
+            .mainRow3 .book li p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .mainRow3 .book li p.title{
+                font-size: 14px;
+                font-weight: 800;
+            }
+            .mainRow3 .book li p.writer{
+                font-size: 12px;
+                color: #c8c8c8;
+            }
+            /*메인로우3끝*/
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <!--레프트버튼-->
+                <div id="mySidenav" class="sidenav">
+                    <!--메뉴탑-->
+                    <div class="menuTop">
+                        <div class="profileImage"></div>
+                        <a href="#" class="user">김소연</a>
+                        <a href="#" class="logout">로그아웃</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                          <img src="/images/common/header_panel_closeBtn.png">
+                        </a><!--x버튼-->
+                    </div>
+                    <!--230-->
+                    <ul class="condition cf">
+                        <li><a href="#" class="borrow">2</a>대출현황</li>
+                        <li><a href="#" class="reserve">3</a>예약현황</li>
+                        <li><a href="#" class="balance">0</a>상호대차</li>
+                    </ul>
+                    <!--바코드-->
+                    <a href="#" class="barcode"><img src="images/common/profile_barcode.png"></a>
+                    <!--gnb-->
+                    <div class="gnb">
+                        <a href="#">My library</a>
+                        <ul class="hide">
+                            <li>회원증</li>
+                            <li>대출현황</li>
+                            <li>대출이력</li>
+                            <li>예약현황</li>
+                            <li>상호대차</li>
+                            <li>전자책 내서재</li>
+                        </ul>
+                        <a href="#">통합서비스</a>
+                        <ul class="hide">
+                            <li>회원증</li>
+                            <li>대출현황</li>
+                            <li>대출이력</li>
+                            <li>예약현황</li>
+                            <li>상호대차</li>
+                            <li>전자책 내서재</li>
+                        </ul>
+                        <a href="#">부산광역시 수영구도서관</a>
+                        <ul class="hide">
+                            <li>회원증</li>
+                            <li>대출현황</li>
+                            <li>대출이력</li>
+                            <li>예약현황</li>
+                            <li>상호대차</li>
+                            <li>전자책 내서재</li>
+                        </ul>
+                        <a href="#">수영구도서관 망미분관</a>
+                        <ul class="hide">
+                            <li>회원증</li>
+                            <li>대출현황</li>
+                            <li>대출이력</li>
+                            <li>예약현황</li>
+                            <li>상호대차</li>
+                            <li>전자책 내서재</li>
+                        </ul>
+                    </div>
+                </div>
+                <span style="cursor:pointer" onclick="openNav()" class="openBtn"><img src="images/common/header_panel.png" alt="메뉴아이콘"></span>
+                <!--레프트버튼-->
+                
+                <h1><a href="#">수영 U-도서관</a></h1>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력해주세요."/>
+                    <a href="#">
+                        <img src="images/common/header_search.png" alt="돋보기버튼">
+                    </a>
+                </div>
+            </div>
+            <div id="container">
+                <div class="mainslider">
+                <section class="lazy slider">
+                    <div><img src="images/main/mainslider_img.png"></div>
+                    <div><img src="images/main/mainslider_img.png"></div>
+                    <div><img src="images/main/mainslider_img.png"></div>
+                    <div><img src="images/main/mainslider_img.png"></div>
+                </section>
+                <p>수영 U-도서관에서<br/><span>더욱 폭넓은 독서</span>를 즐겨보세요.</p>
+                </div>
+                <div class="mainRow1">
+                    <ul class="fastmenu cf">
+                        <li>
+                            <a href="#">
+                                <span class="icon1">아이콘1</span>
+                                <p>이용 안내</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon2">아이콘2</span>
+                                <p>휴관일 안내</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon3">아이콘3</span>
+                                <p>인기도서</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon4">아이콘4</span>
+                                <p>희망도서신청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon5">아이콘5</span>
+                                <p>대출현황</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon6">아이콘6</span>
+                                <p>상호대차조회</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainRow2">
+                    
+                    
+                    <!--탭메뉴-->
+                    <ul class="tabs cf">
+                        <li class="active" rel="tab1">공지사항</li>
+                        <li rel="tab2">교육행사안내</li>
+                    </ul>
+                    <div class="tab_container">
+                        <ul id="tab1" class="tab_content">
+                                <li><span>공지사항</span><a href="#">&#91;수영구&#93; 2018년 1월 기증자 안내</a></li>
+                                <li><span>공지사항</span><a href="#">&#91;망미&#93; 2018년 1월 기증자 안내</a></li>
+                                <li><span>공지사항</span><a href="#">2018년 2월 청소년 자원봉사자 모집</a></li>
+                                <li class="last"><a href="#">더보기&#43;</a></li>
+                        </ul>
+                        <!-- #tab1 -->
+                        <ul id="tab2" class="tab_content">
+                            <li><span>행사안내</span><a href="#">행사안내행사안내</a></li>
+                            <li><span>행사안내</span><a href="#">행사안내행사안내</a></li>
+                            <li><span>행사안내</span><a href="#">행사안내행사안내</a></li>
+                            <li class="last"><a href="#">더보기&#43;</a></li>
+                        </ul>
+                        <!-- #tab2 -->
+                    </div>
+                    <!--탭메뉴-->
+                </div>
+                <div class="mainRow3">
+                    <h4>오늘의 추천도서</h4>
+                    
+                    
+                    <!--탭메뉴-->
+                    <ul class="age">
+                        <li class="age_active" rel="book_1">일반</li>
+                        <li rel="book_2">청소년</li>
+                        <li rel="book_3">아동</li>
+                    </ul>
+                    <div class="book">
+                        <ul id="book_1" class="book_content cf">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book1.png">
+                                    <p class="title">당당한 안녕</p>
+                                    <p class="writer">이기숙</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book2.png">
+                                    <p class="title">부유하는 세상의 화가</p>
+                                    <p class="writer">가즈오 이시구로</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book3.png">
+                                    <p class="title">위대하고 위험한 약 이야기</p>
+                                    <p class="writer">정진호</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book4.png">
+                                    <p class="title">문구의 과학</p>
+                                    <p class="writer">와쿠이 요시유키&#42;와쿠이 사다미</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- #tab1 -->
+                        <ul id="book_2" class="book_content cf">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book2.png">
+                                    <p class="title">당당한 안녕</p>
+                                    <p class="writer">이기숙</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book2.png">
+                                    <p class="title">부유하는 세상의 화가</p>
+                                    <p class="writer">가즈오 이시구로</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book2.png">
+                                    <p class="title">위대하고 위험한 약 이야기</p>
+                                    <p class="writer">정진호</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book2.png">
+                                    <p class="title">문구의 과학</p>
+                                    <p class="writer">와쿠이 요시유키&#42;와쿠이 사다미</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- #tab2 -->
+                        <ul id="book_3" class="book_content cf">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book3.png">
+                                    <p class="title">당당한 안녕</p>
+                                    <p class="writer">이기숙</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book3.png">
+                                    <p class="title">부유하는 세상의 화가</p>
+                                    <p class="writer">가즈오 이시구로</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book3.png">
+                                    <p class="title">위대하고 위험한 약 이야기</p>
+                                    <p class="writer">정진호</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/row3_book3.png">
+                                    <p class="title">문구의 과학</p>
+                                    <p class="writer">와쿠이 요시유키&#42;와쿠이 사다미</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--#tab3-->
+                    </div>
+                    <!--탭메뉴-->
+                </div>
+            </div>
+            <div id="footer">
+                <div class="footerIn">
+                    <div class="footerBtn">
+                        <a href="#" class="PC">PC버전</a>
+                        <a href="#">English</a>
+                    </div>
+                    <p>Copyright &copy; 부산광역시 수영구도서관 All rights reserved.</p>
+                </div>
+                <ul class="footerBottom cf">
+                    <li><a href="#"><img src="images/common/footer_ico1.png"></a></li>
+                    <li><a href="#"><img src="images/common/footer_ico2.png"></a></li>
+                    <li><a href="#"><img src="images/common/footer_ico3.png"></a></li>
+                    <li><a href="#"><img src="images/common/footer_ico4.png"></a></li>
+                    <li><a href="sub_18.html"><img src="images/common/footer_ico5.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
