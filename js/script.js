@@ -1,12 +1,3 @@
-            //공통
-            $( document ).ready(function( $ ) {           
-                $("#header").load("header.html");
-                $("#footer").load("footer.html");
-            });
-
-
-
-
             //마우스스크롤
             $(function () {
                 baloonUp();
@@ -42,13 +33,13 @@
                 });
                 $('.gnbPor').click(function () {
                     $('body,html').animate({
-                        scrollTop: 2420
+                        scrollTop: 2700
                     }, 800);
                     return false;
                 });
                 $('.gnbCon').click(function () {
                     $('body,html').animate({
-                        scrollTop: 3180
+                        scrollTop: 3500
                     }, 800);
                     return false;
                 });
@@ -62,7 +53,7 @@
                     width: 670,
                     height: 500,
                     orientation: 'vertical',
-                    loop: false,
+                    loop: true,
                     arrows: true,
                     buttons: false,
                     thumbnailsPosition: 'right',

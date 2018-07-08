@@ -107,6 +107,7 @@
 
 #example5 .sp-thumbnail-text {
 	width: 170px;
+    height: 80px;
     float: right;
     padding: 8px;
     background-color: #fff;
@@ -121,7 +122,7 @@
 }
 
 #example5 .sp-thumbnail-description {
-	font-size: 14px;
+	font-size: 12px;
 	color: #333;
 }
 

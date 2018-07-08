@@ -6,7 +6,66 @@
         
         <title>Portfolio KimSoyeon</title>
         <!--폰트<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
-        <link href='Noto_Sans/NotoSans.css' rel='stylesheet' type='text/css'><!--폰트-->
+        <link href='css/styles.css' rel='stylesheet' type='text/css'><!--폰트-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'><!--폰트-->
+        <link rel="stylesheet" type="text/css" href="css/style.css"><!--스타일-->
+        <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/> <!--슬라이더-->
+        <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/> <!--슬라이더-->
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> <!--자바스크립트-->
+        <script type="text/javascript" src="js/script.js"></script><!--스크립트-->
+        <script type="text/javascript" src="js/jquery.sliderPro.min.js"></script><!--슬라이더-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script><!--퍼센테이지-->
+        
+        <style>
+            .sea{
+                min-width: 1400px;
+            }
+            .waterimg{
+                min-width: 1400px;
+            }
+            .mainRow1{
+                padding-top: 50px;
+            }
+            .mainRow1 p{
+                padding-left: 0;
+            }
+            .mainRow3 p{
+                display: inline-block;
+                text-align: center;
+                color: white;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <h1><a href="#">로고</a></h1>
+                <ul class="gnb">
+                    <li class="first-child"><a href="#profile" class="gnbPro">PROFILE</a></li>
+                    <li><a href="#portfolio" class="gnbPor">PORTFOLIO</a></li>
+                    <li><a href="#contact" class="gnbCon">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="container">
+                <!--mainslider start-->
+                <div class="mainslider">
+                    <video class="sea" width="100%" height="auto" autoplay="autoplay" loop="loop">
+                        <source src="images/Sunset%20-%2015779.mp4" type="video/mp4">
+                    </video>
+                    <img src="images/common/main_waterimg.png" class="waterimg">
+                    <img src="images/main/main_laptop.png" class="laptop">
+                    <div class="black">
+                        <xmp><!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <title>Portfolio KimSoyeon</title>
+        <!--폰트<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
+        <link href='css/styles.css' rel='stylesheet' type='text/css'><!--폰트-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'><!--폰트-->
         <link rel="stylesheet" type="text/css" href="css/style.css"><!--스타일-->
         <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/> <!--슬라이더-->
@@ -37,7 +96,6 @@
                     <img src="images/common/main_waterimg.png" class="waterimg">
                     <img src="images/main/main_laptop.png" class="laptop">
                     <div class="black">
-                        <xmp>소스 들어가는 부분</xmp>
                     </div>
                     <div class="mainText">
                         <h2><img src="images/main/mainSlider_welcome.png"></h2>
@@ -142,79 +200,121 @@
                         <div class="box"></div>
                         <h2 class="font">PORTFOLIO</h2>
                     </div>
-                    <a class="moreBtn" href="#">&#43;</a>
+                    <a class="moreBtn" href="sub/sub1_portfolio.html">&#43;</a>
                     <div class="row3Content">
                         <div id="example5" class="slider-pro">
                             <div class="sp-slides">
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="images/main/portfolio1.jpg"/>
+                                    <img class="sp-image" src="images/main/02library.png"/>
                                     <div class="sp-caption">포트폴리오이미지1입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="images/main/portfolio2.jpg"/>
+                                    <img class="sp-image" src="images/main/02library.png"/>
                                     <div class="sp-caption">포트폴리오이미지2입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="images/main/portfolio3.jpg"/>
+                                    <img class="sp-image" src="images/main/04hollys.png"/>
                                     <div class="sp-caption">포트폴리오이미지3입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image4_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image4_large.jpg"/>
-
-                                    <div class="sp-caption">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                                    <img class="sp-image" src="images/main/04hollys.png"/>
+                                    <div class="sp-caption">포트폴리오이미지4입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image5_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image5_large.jpg"/>
-
-                                    <div class="sp-caption">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                    <img class="sp-image" src="images/main/05lighting.png"/>
+                                    <div class="sp-caption">포트폴리오이미지5입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image6_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image6_large.jpg"/>
-
-                                    <div class="sp-caption">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
+                                    <img class="sp-image" src="images/main/06cafebene.png"/>
+                                    <div class="sp-caption">포트폴리오이미지6입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image7_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image7_large.jpg"/>
-
-                                    <div class="sp-caption">Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                                    <img class="sp-image" src="images/main/07hansol.png"/>
+                                    <div class="sp-caption">포트폴리오이미지7입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image8_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image8_large.jpg"/>
-
-                                    <div class="sp-caption">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+                                    <img class="sp-image" src="images/main/08samsung_mobile.png"/>
+                                    <div class="sp-caption">포트폴리오이미지8입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image9_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image9_large.jpg"/>
-
-                                    <div class="sp-caption">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</div>
+                                    <img class="sp-image" src="images/main/01.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 1입니다. 인포그래픽 자기소개서입니다.</div>
                                 </div>
-
                                 <div class="sp-slide">
-                                    <img class="sp-image" src="../src/css/images/blank.gif"
-                                        data-src="http://bqworks.com/slider-pro/images/image10_medium.jpg"
-                                        data-retina="http://bqworks.com/slider-pro/images/image10_large.jpg"/>
-
-                                    <div class="sp-caption">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                                    <img class="sp-image" src="images/main/02.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 2입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/03.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 3입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/04.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 4입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/05.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 5입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/06.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 6입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/07.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 7입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/08.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 8입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/09.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 9입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/10.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 10입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/11.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 11입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/12.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 12입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/13.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 13입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/14.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 14입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/15.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 15입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/16.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 16입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/17.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 17입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/18.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 18입니다. 모델수지</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/19.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 19입니다. 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/20.jpg"/>
+                                    <div class="sp-caption">아트웍 작업 20입니다. 모델수지</div>
                                 </div>
                             </div>
 
@@ -318,11 +418,42 @@
                                         <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
                                     </div>
                                 </div>
+                                
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/portfolio1.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">할리스 메인페이지</div>
+                                        <div class="sp-thumbnail-description">할리스 메인페이지 설명입니다.</div>
+                                    </div>
+                                </div>
+
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/portfolio2.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">한솔 메인페이지</div>
+                                        <div class="sp-thumbnail-description">한솔 메인페이지 설명입니다.</div>
+                                    </div>
+                                </div>
+
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/portfolio3.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">카페베네 메인페이지</div>
+                                        <div class="sp-thumbnail-description">카페베네 메인페이지 설명입니다.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--mainRow3 end-->
+                <!--mainRow3 start-->
                 <div id="contact" class="mainRow4">
                     <div id="map">
                         <script>
@@ -352,12 +483,528 @@
                         </ul>
                     </div>
                 </div>
+                <!--mainRow4 end-->
             </div>
             <div id="footer">
                 <ul class="sns">
                     <li><a href="#"><img src="images/common/footer_sns1.png"></a></li>
                     <li><a href="#"><img src="images/common/footer_sns2.png"></a></li>
                     <li class="last"><a href="#"><img src="images/common/footer_sns3.png"></a></li>
+                </ul>
+                <p>&copy; 2018 Company All Rights Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
+                </xmp>
+                    </div>
+                    <div class="mainText">
+                        <h2><img src="images/main/mainSlider_welcome.png"></h2>
+                        <h4>언제나 생각하고 상상하는 신입 웹퍼블리셔 <span>김소연</span>의 공간입니다.</h4>
+                    </div>
+                    <div class="scroll">scroll</div>
+                </div>
+                <!--mainslider end-->
+                <!--mainRow1 start-->
+                <div id="profile" class="mainRow1 w1000">
+                    <p>반갑습니다! 언제나 꼼꼼하고 효율적인 코딩을 위해 고민하는 신입 웹퍼블리셔 김소연입니다. 웹에 관심이 생겨 웹디자인과 웹퍼블리싱 과정을 6개월 이수하였으며, 그 중에서도 특히 퍼블리싱에 흥미와 적성을 느껴 적극적으로 공부하였습니다. 암기보다는 이해 위주로, 원인과 결과의 상관관계를 보다 잘 이해할 수 있도록 개념을 탄탄히 하려 노력하였습니다. 앞으로도 신입의 열정을 잃지 않고 웹 표준과 접근성에 대해 더 배워나가며 꾸준히 발전하고 성장하는 웹퍼블리셔가 되고 싶습니다.</p>
+                    <div class="row1Title">
+                        <div class="box"></div>
+                        <h6>PUBLISHER</h6>
+                        <h2 class="font">KIM SOYEON</h2>
+                    </div>
+                    <div class="row1Content w1000">
+                        <div class="row1Left">
+                            <div class="picture"></div>
+                        </div>
+                        <div class="row1Right">
+                            <h4><img src="images/main/row1_profileTitle.png"></h4>
+                            <ul class="profileHead">
+                                <li><img src="images/main/row1_content1.png"></li>
+                                <li><img src="images/main/row1_content2.png"></li>
+                                <li><img src="images/main/row1_content3.png"></li>
+                                <li><img src="images/main/row1_content4.png"></li>
+                                <li class="last"><img src="images/main/row1_content5.png"></li>
+                            </ul>
+                            <ul class="profileContent">
+                                <li>1993.12.16</li>
+                                <li>Pusan National University</li>
+                                <li>Landscape Architecture</li>
+                                <li>컴퓨터그래픽스운용기능사<br>웹디자인기능사<br>GTQ 그래픽기술자격 1급<br>GTQ 일러스트레이터 1급</li>
+                                <li>2015 캡스톤디자인경진대회 금상</li>
+                            </ul>
+                            <ul class="hashtag">
+                                <li>&#35;꼼꼼한</li>
+                                <li>&#35;성실한</li>
+                                <li>&#35;책임감있는</li>
+                                <li>&#35;긍정적인</li>
+                                <li>&#35;논리적인</li>
+                                <li>&#35;노력하는</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--mainRow1 end-->
+                <div class="logomaking">
+                    <img src="images/main/logomaking.jpg" alt="로고제작과정">
+                </div>
+                <!--mainRow2 start-->
+                <div class="mainRow2">
+                    <div class="row2Title">
+                        <div class="box"></div>
+                        <h2 class="font">SKILLS</h2>
+                    </div>
+                    <div class="row2Content">
+                        <div class="row2-line1">
+                            <p>PHOTOSHOP</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="90">
+                                    <div></div>	
+                                </div>
+                            </div>
+                            <p>ILLUSTRATOR</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="80">
+                                    <div></div>	
+                                </div>
+                            </div>
+                            <p>HTML5</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="80">
+                                    <div></div>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row2-line2">
+                            <p>CSS3</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="70">
+                                    <div></div>	
+                                </div>
+                            </div>
+                            <p>JAVASCRIPT</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="60">
+                                    <div></div>	
+                                </div>
+                            </div>
+                            <p>JQUERY</p>
+                            <div class="progressbar" data-animate="false">
+                                <div class="circle" data-percent="50">
+                                    <div></div>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--mainRow2 end-->
+                <!--mainRow3 start-->
+                <div id="portfolio" class="mainRow3">
+                    <div class="row3Title">
+                        <div class="box"></div>
+                        <h2 class="font">PORTFOLIO</h2>
+                    </div>
+                    <p>자세히 보기</p>
+                    <a class="moreBtn" href="sub/sub1.html">&#43;</a>
+                    <div class="row3Content">
+                        <div id="example5" class="slider-pro">
+                            <div class="sp-slides">
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/01plus.jpg"/>
+                                    <div class="sp-caption">'유기농플러스'라는 이름을 가진 친환경농작물 판매사이트를 리뉴얼한 사이트입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/02library.png"/>
+                                    <div class="sp-caption">부산광역시 수영구 도서관에서 운영하는 수영구 u-도서관 어플을 리뉴얼한 사이트입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/03outback.jpg"/>
+                                    <div class="sp-caption">우리나라에서 가장 많이 소비되는 패밀리 레스토랑 중 하나인 아웃백 스테이크 하우스의 사이트를 리뉴얼한 사이트입니다. </div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/04hollys.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 할리스커피 사이트의 메인페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/05lighting.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 우담라이팅 사이트의 서브페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/06cafebene.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 카페베네 사이트의 메인페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/07hansol.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 한솔홈데코 사이트의 메인페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/08samsung_web.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 삼성디스플레이 사이트의 메인페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/08samsung_mobile.png"/>
+                                    <div class="sp-caption">[Publishing Only]퍼블리싱 연습용으로 삼성디스플레이 사이트의 메인페이지를 보고 따라 만들어본 것입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/01.jpg"/>
+                                    <div class="sp-caption">[Artwork] 인포그래픽 자기소개서입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/06.jpg"/>
+                                    <div class="sp-caption">[Artwork] 패션 아트웍1 작업입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/02.jpg"/>
+                                    <div class="sp-caption">[Artwork] 패션 아트웍2 작업입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/04.jpg"/>
+                                    <div class="sp-caption">[Artwork] 빈티지 엽서 디자인1입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/05.jpg"/>
+                                    <div class="sp-caption">[Artwork] 빈티지 엽서 디자인2입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/07.jpg"/>
+                                    <div class="sp-caption">[Artwork] 동양화 디자인입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/08.jpg"/>
+                                    <div class="sp-caption">[Artwork] 피자 광고 포스터 일러스트입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/09.jpg"/>
+                                    <div class="sp-caption">[Artwork] 일러스트레이터로 작업한 3D 건물 따라그리기입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/10.jpg"/>
+                                    <div class="sp-caption">[Artwork] 락페스티벌 포스터 디자인입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/11.jpg"/>
+                                    <div class="sp-caption">[Artwork] 타이포그래피입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/12.jpg"/>
+                                    <div class="sp-caption">[Artwork] 부산불꽃축제 포스터 디자인입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/18.PNG"/>
+                                    <div class="sp-caption">[Artwork] 3D 타이포디자인 작업1입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/13.jpg"/>
+                                    <div class="sp-caption">[Artwork] 3D 타이포디자인 작업2입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/14.jpg"/>
+                                    <div class="sp-caption">[Artwork] 이미지 트레이스 작업입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/15.jpg"/>
+                                    <div class="sp-caption">[Artwork] 새해배너 디자인입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/16.jpg"/>
+                                    <div class="sp-caption">[Artwork] 할로윈 일러스트 작업입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/17.PNG"/>
+                                    <div class="sp-caption">[Artwork] 크리스마스 일러스트 작업입니다.</div>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="images/main/19.PNG"/>
+                                    <div class="sp-caption">[Artwork] 패턴디자인입니다.</div>
+                                </div>
+                            </div>
+
+                            <div class="sp-thumbnails">
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/01plus.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[W]유기농플러스</div>
+                                        <div class="sp-thumbnail-description">웹사이트 리뉴얼<br>Design+Publishing</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/02library.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[M]수영구도서관</div>
+                                        <div class="sp-thumbnail-description">수영U-도서관 앱 리뉴얼<br>Design+Publishing</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/03outback.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[M]아웃백</div>
+                                        <div class="sp-thumbnail-description">웹사이트 리뉴얼<br>Design+Publishing</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/04hollys.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[W]HOLLYS COFFEE</div>
+                                        <div class="sp-thumbnail-description">할리스 커피 메인페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/05lighting.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[W]우담라이팅</div>
+                                        <div class="sp-thumbnail-description">우담라이팅 서브페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/06cafebene.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[반응형]카페베네</div>
+                                        <div class="sp-thumbnail-description">카페베네 메인페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/07hansol.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[반응형]한솔홈데코</div>
+                                        <div class="sp-thumbnail-description">한솔홈데코 메인페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/08samsung_web.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[W]삼성디스플레이</div>
+                                        <div class="sp-thumbnail-description">삼성디스플레이 메인페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/08samsung_mobile.png"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">[M]삼성디스플레이</div>
+                                        <div class="sp-thumbnail-description">삼성디스플레이 메인페이지<br>Publishing Only</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/01.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">인포그래픽</div>
+                                        <div class="sp-thumbnail-description">자기소개서입니다.</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/06.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">패션아트웍1</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/02.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">패션아트웍2</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/04.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">빈티지 엽서 디자인1</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/05.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">빈티지 엽서 디자인2</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/07.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">동양화 디자인</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/08.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">피자 광고 포스터</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/09.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">3D Architecture</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/10.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">락페스티벌 포스터</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/11.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">타이포그래피</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/12.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">불꽃축제포스터</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/18.PNG"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">3D 타이포디자인1</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/13.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">3D 타이포디자인2</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/14.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">이미지 트레이스</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/15.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">새해배너</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/16.jpg"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">할로윈 일러스트</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/17.PNG"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">크리스마스 일러스트</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                                <div class="sp-thumbnail">
+                                    <div class="sp-thumbnail-image-container">
+                                        <img class="sp-thumbnail-image" src="images/main/19.PNG"/>
+                                    </div>
+                                    <div class="sp-thumbnail-text">
+                                        <div class="sp-thumbnail-title">패턴디자인</div>
+                                        <div class="sp-thumbnail-description">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--mainRow3 end-->
+                <!--mainRow3 start-->
+                <div id="contact" class="mainRow4">
+                    <div id="map">
+                        <script>
+                          function initMap() {
+                            var uluru = {lat: 35.1661844, lng: 129.1104829};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 15,
+                              center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                              position: uluru,
+                              map: map
+                            });
+                          }
+                        </script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf8oyqJtfZwpgrd9PyqKB07Ko-xspER5o&callback=initMap">
+                        </script>
+                    </div>
+                    <div class="row4Title">
+                        <div class="box"></div>
+                        <h2 class="font">CONTECT</h2>
+                        <ul class="content">
+                            <li><img src="images/main/contect_ico1.png">부산광역시 수영구 광안동</li>
+                            <li><img src="images/main/contect_ico2.png">010.2441.6982</li>
+                            <li><img src="images/main/contect_ico3.png">kem931216&#64;naver.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--mainRow4 end-->
+            </div>
+            <div id="footer">
+                <ul class="sns">
+                    <li><a href="https://www.facebook.com/profile.php?id=100003742381238"><img src="images/common/footer_sns1.png"></a></li>
+                    <li><a href="https://www.instagram.com/sssssoyeon_93/"><img src="images/common/footer_sns2.png"></a></li>
+                    <li class="last"><a href="https://blog.naver.com/kem931216" ><img src="images/common/footer_sns3.png"></a></li>
                 </ul>
                 <p>&copy; 2018 Company All Rights Reserved.</p>
             </div>
